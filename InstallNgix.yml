@@ -1,6 +1,6 @@
 ---
 - name: Install nginx
-  hosts: windows
+  hosts: Windows
   become: true
 
   tasks:

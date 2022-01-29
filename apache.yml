@@ -1,5 +1,5 @@
   - name: Playbook
-    hosts: 192.168.46.130
+    hosts: all
     become: yes
     become_user: root
     tasks:

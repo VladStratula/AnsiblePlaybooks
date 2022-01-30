@@ -1,6 +1,7 @@
 ---
   - name: Playbook
     hosts: all
+    remote_user: vstratula
     become: yes
     tasks:
       - name: ensure apache is at the latest version

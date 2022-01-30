@@ -1,11 +1,10 @@
 ---
   - name: Playbook
     hosts: all
-    sudo: yes
     tasks:
       - name: ensure apache is at the latest version
         apt:
-          name: apache2
+          name: httpd
           state: latest
       - name: ensure apache is running
         service:

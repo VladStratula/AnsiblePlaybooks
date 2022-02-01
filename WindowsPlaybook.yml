@@ -1,0 +1,10 @@
+---
+- name: Run basic PowerShell script
+  hosts: all
+
+  tasks:
+  - name: hello world
+    win_shell: |
+         $text = Get-Content C:\Users\AnsibleUser\Desktop\test.txt
+         $text += "text changed"
+         Set-content C:\Users\AnsibleUser\Desktop\test2.txt -Value $text

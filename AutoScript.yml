@@ -1,7 +1,6 @@
 ---
   - name: Automation VM Provisioning
     hosts: all
-    become: yes
     tasks:
       - name: run script
         win_shell: |

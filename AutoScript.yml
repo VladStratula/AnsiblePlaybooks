@@ -7,7 +7,4 @@
     tasks:
       - name: run script
         win_shell: |
-          $script = Test-Path -Path C:\Users\AnsibleUser\Desktop\Installer2.0.ps1
-          if ($value) {
-            $script
-          }
+          C:\Users\AnsibleUser\Desktop\Installer2.0.ps1

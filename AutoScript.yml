@@ -2,7 +2,8 @@
   - name: Automation VM Provisioning
     hosts: all
     become: yes
-    become_user: System
+    become_user: Admin
+    become_method: runas
     tasks:
       - name: run script
         win_shell: |
